@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Question Answering Two major paradigms:  Information retrieval(IR)-based (open domain) Information retrieval is used to find relevant passages Reading Comprehension to answer directly from spans of te">
+<meta property="og:type" content="article">
+<meta property="og:title" content="My Blog">
+<meta property="og:url" content="http://williamzr.github.io/blog/2022/05/23/Question%20Answering/index.html">
+<meta property="og:site_name" content="My Blog">
+<meta property="og:description" content="Question Answering Two major paradigms:  Information retrieval(IR)-based (open domain) Information retrieval is used to find relevant passages Reading Comprehension to answer directly from spans of te">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-13-23-image.png">
+<meta property="og:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-30-58-image.png">
+<meta property="og:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-33-25-image.png">
+<meta property="og:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-35-52-image.png">
+<meta property="og:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-40-02-image.png">
+<meta property="og:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-53-54-image.png">
+<meta property="og:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-16-06-57-image.png">
+<meta property="og:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-16-25-26-image.png">
+<meta property="og:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-16-30-09-image.png">
+<meta property="og:image" content="c:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-23-59-52-image.png">
+<meta property="og:image" content="c:/Users/24432/AppData/Roaming/marktext/images/2022-05-24-00-01-55-image.png">
+<meta property="og:image" content="c:/Users/24432/AppData/Roaming/marktext/images/2022-05-24-00-08-51-image.png">
+<meta property="article:published_time" content="2022-05-23T07:32:07.234Z">
+<meta property="article:modified_time" content="2022-05-23T16:24:28.874Z">
+<meta property="article:author" content="WilliamZR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-13-23-image.png">
+  
+    <link rel="alternate" href="/blog/atom.xml" title="My Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/blog/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/blog/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">My Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://williamzr.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Question Answering" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/blog/2022/05/23/Question%20Answering/" class="article-date">
+  <time class="dt-published" datetime="2022-05-23T07:32:07.234Z" itemprop="datePublished">2022-05-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Question-Answering"><a href="#Question-Answering" class="headerlink" title="Question Answering"></a>Question Answering</h2><ul>
+<li><p>Two major paradigms:</p>
+<ul>
+<li><p><strong>Information retrieval(IR)-based</strong> (open domain)</p>
+<p>Information retrieval is used to find relevant passages</p>
+<p>Reading Comprehension to answer directly from spans of text</p>
+</li>
+<li><p><strong>Knowledge-based</strong></p>
+<p>build a semantic representation of the query</p>
+<p>Meaning representations are used to query databases of facts.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Factoid Questions</strong>: can be answered in simple facts in short texts</p>
+</li>
+</ul>
+<h4 id="Information-Retrieval"><a href="#Information-Retrieval" class="headerlink" title="Information Retrieval"></a>Information Retrieval</h4><ul>
+<li><p><strong>Information Retrieval</strong>: retrieval of all manner fo media based on user information needs</p>
+</li>
+<li><p><strong>ad hoc retrieval</strong> </p>
+<img title="" src="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-13-23-image.png" alt="" data-align="center" width="567">
+
+<ul>
+<li><p>user poses a <strong>query</strong></p>
+</li>
+<li><p>returns ordered set of documents from some collection</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="Term-Weighting"><a href="#Term-Weighting" class="headerlink" title="Term Weighting"></a>Term Weighting</h5><ul>
+<li><p>We use <strong>term weight</strong> instead of raw counts  (TF-IDF, BM25)</p>
+</li>
+<li><p><strong>TF-IDF</strong></p>
+<p>$$<br>\mathrm{tf}_{t, d}=\log <em>{10}(\operatorname{count}(t, d)+1)\<br>\mathrm{idf}</em>{t}=\log <em>{10} \frac{N}{\mathrm{df}</em>{t}}<br>$$</p>
+</li>
+</ul>
+<h5 id="Document-Scoring"><a href="#Document-Scoring" class="headerlink" title="Document Scoring"></a>Document Scoring</h5><ul>
+<li><p>Cosine similarity</p>
+<img src="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-30-58-image.png" title="" alt="" data-align="center"></li>
+<li><p>展开这个公式的话：</p>
+<img src="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-33-25-image.png" title="" alt="" data-align="center"></li>
+<li><p>对于query来说，一般每个词出现的次数是1，并且对于每个不同的$d$来说，$\left| q\right|$是相等的。因此对于每一个文档的打分可以因此而简化：</p>
+<img src="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-35-52-image.png" title="" alt="" data-align="center"></li>
+<li><p><strong>BM25</strong> （complex variant of tf-idf）</p>
+<ul>
+<li><p>IDF + weighted TF</p>
+<img src="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-40-02-image.png" title="" alt="" data-align="center"></li>
+<li><p>$k =0$ BM25 退化成IDF</p>
+</li>
+<li><p>$ k &gt;&gt; tf$, weighted tf的分母可以看作是一个常数，则退化成TF-IDF</p>
+</li>
+<li><p>$b$ 控制根据句子长度的normalization强度</p>
+</li>
+</ul>
+</li>
+<li><p><strong>stopwords</strong> </p>
+<ul>
+<li><p>In the past, it was common to remove high-frequency words from both the query and document.</p>
+</li>
+<li><p>Less common in modern systems of IR. Due to improved effciency and IDF</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="Inverted-Index"><a href="#Inverted-Index" class="headerlink" title="Inverted Index"></a>Inverted Index</h5><ul>
+<li><p><strong>Basic Search Problem</strong>: find all documents $d \in C$ containing a term $q \in Q$</p>
+<img src="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-15-53-54-image.png" title="" alt="" data-align="center"></li>
+<li><p>Inverted index consists of two parts:</p>
+<ul>
+<li><p><strong>dictionary</strong>: a list of terms, each term pointing to a posting list</p>
+</li>
+<li><p><strong>postings list</strong>: list of documents IDs associated with each term, which can alse contain term frequency information.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="Evaluation"><a href="#Evaluation" class="headerlink" title="Evaluation"></a>Evaluation</h5><ul>
+<li>precision, recall, ap</li>
+</ul>
+<h5 id="Dense-Vectors"><a href="#Dense-Vectors" class="headerlink" title="Dense Vectors"></a>Dense Vectors</h5><ul>
+<li><p>Vocabulary Mismatch Problem: </p>
+<p>user: tragic love story</p>
+<p>Shakespeare: star-crossed lovers</p>
+</li>
+<li><p>BERT Dense Passage Retriver</p>
+</li>
+</ul>
+<img src="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-16-06-57-image.png" title="" alt="" data-align="center">
+
+<h4 id="IR-based-Factoid-QA"><a href="#IR-based-Factoid-QA" class="headerlink" title="IR-based  Factoid QA"></a>IR-based  Factoid QA</h4><img src="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-16-25-26-image.png" title="" alt="" data-align="center">
+
+<h5 id="Datasets"><a href="#Datasets" class="headerlink" title="Datasets"></a>Datasets</h5><h5 id="IR-based-QA-Reader"><a href="#IR-based-QA-Reader" class="headerlink" title="IR-based QA Reader"></a>IR-based QA Reader</h5><img src="file:///C:/Users/24432/AppData/Roaming/marktext/images/2022-05-23-16-30-09-image.png" title="" alt="" data-align="center">
+
+<ul>
+<li>Questions with no answer will have [CLS] as the answer.</li>
+</ul>
+<h5 id="Entity-Linking"><a href="#Entity-Linking" class="headerlink" title="Entity Linking"></a>Entity Linking</h5><ul>
+<li><p><strong>Entity Linking</strong>: association a mention in text with the representation of some real-world entity in an ontology.</p>
+</li>
+<li><p>Two stages</p>
+<ul>
+<li><p><strong>Mention Detection</strong> </p>
+</li>
+<li><p><strong>Mention Disambiguation</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="Linking-Based-on-Anchor-Dictionaries-and-Web-Graph"><a href="#Linking-Based-on-Anchor-Dictionaries-and-Web-Graph" class="headerlink" title="Linking Based on Anchor Dictionaries and Web Graph"></a>Linking Based on Anchor Dictionaries and Web Graph</h5><ul>
+<li><p>Creation of Anchor Dictionary</p>
+<ul>
+<li><p>Each page $e$ as entity</p>
+</li>
+<li><p>in-link($e$)</p>
+</li>
+<li><p>Anchor dictionary： lists of pages point to it (<strong>anchor texts</strong>, spans of text on other pages that point to it)</p>
+</li>
+<li><p>$freq(a)$ : frequency in Wikipedia, including non-anchor uses</p>
+</li>
+<li><p>$linkprob(a)$ : $\frac{link(a)}{freq(a)}$ </p>
+</li>
+<li><p>Clean up: remove single characters, pure numbers, low linkprob strings.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Mention Detection</strong></p>
+<p>querying token sequence with window up to 6 words</p>
+</li>
+<li><p><strong>Mention Disambiguation</strong></p>
+<ul>
+<li><p>Many spans are ambiguous, match anchors for multiple wiki pages</p>
+</li>
+<li><p>Two factors for diaambiguation:</p>
+<ul>
+<li><p>prior probability: </p>
+<p>$$<br>p(e|a) = \frac{count(a\rightarrow e)}{link(a)}<br>$$</p>
+</li>
+<li><p>relatedness</p>
+<p>the relatedness of this entity to other entities in the input question</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img src="C:\Users\24432\AppData\Roaming\marktext\images\2022-05-23-23-59-52-image.png"></p>
+<p><img src="C:\Users\24432\AppData\Roaming\marktext\images\2022-05-24-00-01-55-image.png"></p>
+<h5 id="Graph-based-linking"><a href="#Graph-based-linking" class="headerlink" title="Graph-based linking"></a>Graph-based linking</h5><p><img src="C:\Users\24432\AppData\Roaming\marktext\images\2022-05-24-00-08-51-image.png"></p>
+<ul>
+<li><p>Entity Mention Detection</p>
+<p>BERT encoder of question</p>
+</li>
+<li><p>Entity Linkin</p>
+<p>Entity Encoder: get text from the entity’s Wikipedia page. (title + first 128 tokens)</p>
+<p>scoring with inner product( embedding of span: average pooling)</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://williamzr.github.io/blog/2022/05/23/Question%20Answering/" data-id="cl3ixy1gz0000vov4e2dj7gq4" data-title="" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/blog/2022/05/15/Logical%20Representations%20of%20%20Sentence%20Meaning/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2022/05/">五月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2021/12/">十二月 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/blog/2022/05/23/Question%20Answering/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2022/05/15/Logical%20Representations%20of%20%20Sentence%20Meaning/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2021/12/16/test/">test</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2021/12/14/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 WilliamZR<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/blog/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/blog/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
